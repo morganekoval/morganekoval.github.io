@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style1.css">
-	<title>moko</title>
+    <title>MoKo</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="icon" href="images/logo.png">
 </head>
+
 <body>
-	<div class="nav">
-		<ul class="nav_bar">
-			<li class="nav_bar_el"><h1 class="moko"><em class="mo">MO</em><br/><em class="ko">KO</em></h1></li>
-			<li class="nav_bar_el"><a href="index.html" class="active">desc</a></li>
-			<li class="nav_bar_el"><a href="" alt="">stats</a></li>
-			<li class="nav_bar_el"><a href="" alt="">palmarès</a></li>
-			<li class="nav_bar_el"><a href="" alt="">FAQ</a></li>
-		</ul>
-	</div>
+    <div w3-include-html="header.html" id="header-container"></div>
+
+
+
+
+
+
+
+
 </body>
 </html>
+<script src="js/main.js"></script>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      } 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
