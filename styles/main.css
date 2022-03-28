@@ -1,0 +1,111 @@
+body  {
+  color: black;
+  font-family: OpenSans;
+  /*font-weight: normal;*/
+  background-image: url(../images/bg.png);
+}
+
+col-md-4 {
+  position: fixed;
+  background-color: white;
+}
+
+#col-desc {
+  position: sticky;
+}
+
+h1 {
+  color: blue;
+  font-size: 4vw;
+  font-family: OpenSans;
+  font-weight: bold;
+}
+
+h1 span {  
+  /*font-weight: bold;*/
+}
+
+#photo-me {
+  width:  8vw;
+  display: block;
+  margin-left: 4vw;
+  /*margin-right: ;*/
+  padding-top: 3vw;
+}
+
+
+/* Style the navbar */
+#navbar {
+  padding-top: 1vw;
+  z-index: 3;
+  overflow: hidden;
+  /*border-bottom: orange 4px solid;*/
+}
+
+.selected {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* Navbar links */
+#navbar a {
+  /*float: left;*/
+  /*display: block;*/
+  color: black;
+  text-align: center;
+  /*padding: 14px;*/
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: white;
+}
+
+.selected, #navbar a:hover {
+  color: blue !important;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+h2 {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.email {
+  font-family: Courier;
+}
+
+a {
+  color: blue;
+  /*text-decoration: underline blue dotted 2px;*/
+}
+
+a:hover {
+  color: black;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+.project-title{
+  font-weight: bold;
+  margin-right: 10px;
+
+}
+
+.paper-title{
+  font-weight: bold;
+  color: black;
+}
+
+.paper {
+  border-left: black 4px solid;
+  padding-left: 4px;
+  margin-left: 2px;
+}
