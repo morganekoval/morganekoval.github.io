@@ -1,3 +1,8 @@
+/*html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}*/
+
 body  {
   color: black;
   font-family: OpenSans;
@@ -5,13 +10,16 @@ body  {
   background-image: url(../images/bg.png);
 }
 
-col-md-4 {
+/*col-md-4 {
   position: fixed;
   background-color: white;
-}
+}*/
 
-#col-desc {
-  position: sticky;
+
+@media (min-width = 994px) {
+  #col-desc {
+    position: fixed;
+  }
 }
 
 h1 {
@@ -21,16 +29,9 @@ h1 {
   font-weight: bold;
 }
 
-h1 span {  
+h1 span:hover {  
   /*font-weight: bold;*/
-}
-
-#photo-me {
-  width:  8vw;
-  display: block;
-  margin-left: 4vw;
-  /*margin-right: ;*/
-  padding-top: 3vw;
+  color: orange;
 }
 
 
@@ -80,6 +81,8 @@ h2 {
 
 .email {
   font-family: Courier;
+  border: none !important;
+  position: relative;
 }
 
 a {
@@ -96,7 +99,15 @@ a:hover {
 .project-title{
   font-weight: bold;
   margin-right: 10px;
+  font-size: 15px;
 
+}
+
+.project-img {
+  width: 8vw;
+  object-fit: contain;
+  /*float: right;*/
+  border:  1px black dotted;
 }
 
 .paper-title{
@@ -106,6 +117,126 @@ a:hover {
 
 .paper {
   border-left: black 4px solid;
-  padding-left: 4px;
-  margin-left: 2px;
+  padding-left: 5px;
+  margin-left: 6px;
+}
+
+.project-desc {
+/*  color: white;
+  background-color: orange;*/
+}
+
+.hovertext {
+  position: relative;
+  
+}
+
+.dot-under {
+  border-bottom: 1px dotted black;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  max-width: 45vw;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: ;
+  background-color: blue;
+  color: #fff;
+  text-align: right;
+  border-radius: 0px;
+  padding: 3px 5px;
+  transition: opacity 0s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+#images-holder{
+  positon: relative;
+  /*float: left;*/
+}
+
+#photo-me {
+  position: relative;
+  width:  8vw;
+  /*display: block;*/
+  margin-left: 4vw;
+  /*margin-right: ;*/
+  padding-top: 3vw;
+  z-index: 1;
+}
+
+#photo-me2 {
+  z-index: 2;
+  position: absolute;
+  width:  8vw;
+  /*display: block;*/
+  margin-left: 5vw;
+  /*margin-right: ;*/
+  padding-top: 3vw;
+  left: 0;
+}
+
+#projects, #resume{
+  margin-bottom: 20px;
+}
+
+.bibs {
+  color: black;
+  text-decoration: 1px black underline;
+}
+
+.bibs:hover{
+  color: orange;
+  background-color: white;
+  text-decoration: none;
+}
+
+.vertical-txt {
+  float: right;
+  /*text-align: right;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-orientation: sideways;
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+  color: white;
+}
+
+.edu {
+  background-color: orange;
+}
+
+.exp {
+  background-color: blue;
+}
+
+.resume-date {
+  font-weight: bold;
+}
+
+.resume-title {
+  font-weight: bold;
+  /*background-color: orange;*/
+  color: black;
+  padding-left: 0px 10px;
+}
+
+.resume-cat {
+  margin-bottom: 20px;
+}
+
+.edu-item {
+  margin-bottom: 10px;
 }

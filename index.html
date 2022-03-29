@@ -2,10 +2,10 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <title>MoKo</title>
+    <title>MoKo's personal page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
-    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css?version=4">
     <script src="js/jquery.min.js"></script>
     <link rel="icon" href="images/moko.png">
 </head>
@@ -17,32 +17,122 @@
 
     <div class="col-md-4">
       <div id="col-desc">
-        <img id="photo-me" src="images/moko.png">
-        <h1 id="name"><span>Morgane <br/><span>Ko</span>val</span></h1>
-        <span class="email">morgane[dot]koval[at]inria[dot]fr</span><br/>
-        <span class="address">200, avenue de la Vieille Tour<br/>33405 Talence</span>
+        <div id="images-holder">
+          <!-- <img id="photo-me" src="images/moko.png" onmouseover="this.src='images/real-pic.png'" onmouseout="this.src='images/moko.png'"> -->
+          <img id="photo-me" src="images/moko.png" >
+          <img id="photo-me2" src="images/real-pic.png" >
+      </div>
+        <h1 id="name"><span>Mo</span>rgane <br/><span>Ko</span>val</h1>
+        <span class="email"><span class="hovertext" data-hover="email me!">morgane[dot]koval[at]inria[dot]fr</span></span><br/>
+        <span class="address">Inria Bordeaux (Sud-Ouest)<br/>200, avenue de la Vieille Tour<br/>33405 Talence<br/>France</span>
         <div id="navbar">
           <div><a id="about-link" href="#about">about</a></div>
           <div><a id="projects-link" href="#projects">projects</a></div>
+          <div><a id="resume-link" href="#resume">resume</a></div>
         </div>
       </div>
     </div>
 
     <div class="col-md-8">
       <h2 id="about">about</h2>
-    <div>I'm a PhD Student in the <a href="https://team.inria.fr/potioc/fr/">Potioc team</a> at Inria, Bordeaux, working under supervision of <a href="http://yvonnejansen.me">Yvonne Jansen</a> and funded by the <a href="http://ember.inria.fr">Ember</a> project. I study predictive visualizations for personal decision making, which are uncertainty visualizations showing predictions of plausible future event outcomes that assist decisions taken by individuals regarding their private life.<br/>I'm into all kinds of maps and big orange circles.</div>
+    <div>I'm a PhD Student in the <a href="https://team.inria.fr/potioc/fr/">Potioc team</a> at Inria, Bordeaux, working under supervision of <a href="http://yvonnejansen.me">Dr. Yvonne Jansen</a> and funded by the <a href="http://ember.inria.fr">Ember</a> project. I study <span class="hovertext dot-under" data-hover="uncertainty visualizations showing predictions of plausible future event outcomes">predictive visualizations</span> for <span class="hovertext dot-under" data-hover="decisions taken by individuals regarding their private life">personal decision making</span>. It means that I'm interested in investigating different ways to assist and guide people towards more informed decisions, via visual support based on their personal data.<br/>
+      <strong>+</strong> I'm into all kinds of maps and big orange circles.</div>
 
       <h2 id="projects">projects</h2>
-    <div class="projects-item"><a class="project-title" href="https://timeestimator.github.io">Time estimator</a> An online tool that displays a predictive visualization of the duration of personalizable tasks.
+
+      <div class="row">
+        <div class="col-md-2"><img class="project-img" src="images/project1.jpg"></div>
+        <div class="col-md-10">
+    <div class="projects-item">
+
+      <a class="project-title" href="https://timeestimator.github.io">Time estimator</a>
+      <div>
+      <div class="project-desc">
+       An online tool that displays a predictive visualization of the duration of personalizable tasks.</div>
+       It was developed as a result of a study on predictive visualizations for estimates of task duration. For more details, you can read our <a href="https://hal.inria.fr/hal-03599998/document">paper</a> and <a href="https://osf.io/bwqkh/">pre-registeration on OSF</a>. You can also directly access the <a href="https://timeestimator.github.io/output.html">full results</a>.
+     </div>
       <div class="paper">
-      Morgane Koval, Yvonne Jansen. <a class="paper-title" href="https://hal.inria.fr/hal-03599998/document">Do You See What You Mean? Using Predictive Visualizations to Reduce Optimism in Duration Estimates.</a> CHI 2022 - Conference on Human Factors in Computing Systems, Apr 2022, New Orleans, United States. DOI 10.1145/3491102.3502010.
-    </div>
+      Morgane Koval, Yvonne Jansen. <a class="paper-title" href="https://hal.inria.fr/hal-03599998/document">Do You See What You Mean? Using Predictive Visualizations to Reduce Optimism in Duration Estimates.</a> CHI 2022 - Conference on Human Factors in Computing Systems, Apr 2022, New Orleans, United States. <a href="https://doi.org/10.1145/3491102.3502010">DOI 10.1145/3491102.3502010</a>.<br/>
+      <em>Honorable mention</em>
+
+  </div>
+  <a class="bibs" href="files/Do_You_See_What_You_Mean.bib">Download BibTex citation.</a>
+   
+  </div>
     </div>
 
   </div>
+      <h2 id="resume">resume</h2>
+
+  <div class="resume-cat">
+      <div class="row">
+        <div class="col-md-1">
+          <span class="vertical-txt exp">exp.</span>
+        </div>
+
+        <div class="col-md-11">
+          
+          <div class="row">
+            <div class="col-md-2"><span class="resume-date">March-August 2020</span></div>
+            <div class="col-md-10"><span class="resume-title">Internship</span> "Situated Personal Time Management", supervised by <a href="http://yvonnejansen.me">Dr. Yvonne Jansen</a>. <br/> <a href="https://www.isir.upmc.fr">ISIR</a>, Sorbonne University, France.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="resume-cat">
+
+        <div class="row">
+        <div class="col-md-1">
+          <span class="vertical-txt edu">education</span>
+        </div>
+
+        <div class="col-md-11">
+          
+          <div class="edu-item">
+          <div class="row">
+            <div class="col-md-2"><span class="resume-date">October 2020-</span></div>
+            <div class="col-md-10"><span class="resume-title">PhD Student</span> "Predictive Visualizations for Personal Decision Making", supervised by <a href="http://yvonnejansen.me">Dr. Yvonne Jansen</a>. <br/> <a href="https://www.inria.fr/fr/centre-inria-de-luniversite-de-bordeaux">Inria Bordeaux Sud-Ouest</a>, Talence, France.
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="row">
+            <div class="col-md-2"><span class="resume-date">2018-2020</span></div>
+            <div class="col-md-10"><span class="resume-title">MSc in Computer Science</span> Specialty: operations research and AI (robotics & decision support). <br/> <a href="https://sciences.sorbonne-universite.fr/formation-sciences/masters/master-informatique/parcours-androide">Sorbonne University</a>, Paris, France.
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="row">
+            <div class="col-md-2"><span class="resume-date">2015-2028</span></div>
+            <div class="col-md-10"><span class="resume-title">BA in Mathematics</span>. <br/>
+            <span class="resume-title">BA in Information Technology</span>. <br/> <a href="http://www.math.univ-paris-diderot.fr/formations/licences/mathinfo2/index">Paris-Diderot University</a>, France.
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
 
 </div>
+
+
+
+
     </div>
+
+
+
+
+
 
 </div>
 
@@ -54,6 +144,32 @@
 <script src="js/main.js?version=2"></script>
 <script>
 
+  let img1 = document.getElementById('photo-me');
+  let img2 = document.getElementById('photo-me2');
+  img2.style.visibility = 'hidden';
+  let imgholder = document.getElementById('images-holder');
+  var first = true;
+
+  imgholder.addEventListener("mouseenter", changeCurrentImage, false);
+  // imgholder.addEventListener("mouseleave", changeCurrentImage, false);
+  // imgholder.addEventListener("onclick", changeCurrentImage, false);
+
+  function changeCurrentImage() {
+    img1.style.visibility = (!first ? 'visible' : 'hidden');
+    img2.style.visibility = (first ? 'visible' : 'hidden');
+    first = !first;
+  }
+
+
+/**
+  let imgme = document.getElementById('photo-me');
+  let start = imgme.src;
+  let hover = imgme.getAttribute('data-hover');
+
+  imgme.onmouseover = () => { img.src = hover; }
+  imgme.onmouseout = () => { img.src = start; }**/
+
+console.log(window.innerWidth);
 /**
   console.log(window.innerWidth);
   // When the user scrolls the page, execute myFunction 
