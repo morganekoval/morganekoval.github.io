@@ -15,16 +15,21 @@ body  {
   background-color: white;
 }*/
 
-
-@media (min-width = 994px) {
+@media (min-width: 994px) {
   #col-desc {
     position: fixed;
   }
 }
 
+/*@media (min-width > 994px) {
+  #col-desc {
+    position: fixed;
+  }
+}*/
+
 h1 {
   color: blue;
-  font-size: 4vw;
+  font-size: 55px;
   font-family: OpenSans;
   font-weight: bold;
 }
@@ -169,7 +174,7 @@ a:hover {
 
 #photo-me {
   position: relative;
-  width:  8vw;
+  width:  120px;
   /*display: block;*/
   margin-left: 4vw;
   /*margin-right: ;*/
@@ -180,9 +185,9 @@ a:hover {
 #photo-me2 {
   z-index: 2;
   position: absolute;
-  width:  8vw;
+  width:  120px;
   /*display: block;*/
-  margin-left: 5vw;
+  margin-left: 4vw;
   /*margin-right: ;*/
   padding-top: 3vw;
   left: 0;
