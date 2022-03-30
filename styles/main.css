@@ -15,7 +15,7 @@ body  {
   background-color: white;
 }*/
 
-@media (min-width: 994px) {
+@media (min-width: 994px) and (min-height: 539px) {
   #col-desc {
     position: fixed;
   }
