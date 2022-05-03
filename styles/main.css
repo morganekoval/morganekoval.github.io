@@ -245,3 +245,18 @@ a:hover {
 .edu-item {
   margin-bottom: 10px;
 }
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  border:  1px black dotted;
+}
+
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
