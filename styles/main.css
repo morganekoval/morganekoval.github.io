@@ -7,7 +7,11 @@ body  {
   color: black;
   font-family: OpenSans;
   /*font-weight: normal;*/
-  background-image: url(../images/bg.png);
+  /*background-image: url(../images/bg.png);*/
+  background-image: url(../images/bg_orange.svg);
+  background-repeat: no-repeat;
+  background-position: 15% 15%;
+  background-size: 2628px 4103px;
 }
 
 /*col-md-4 {
@@ -109,7 +113,10 @@ a:hover {
 }
 
 .project-img {
-  width: 8vw;
+  /*width: 8vw;*/
+  /*max-width: 120px;*/
+  width: 120px;
+  max-width: 8vw;
   object-fit: contain;
   /*float: right;*/
   border:  1px black dotted;
@@ -131,10 +138,7 @@ a:hover {
   background-color: orange;*/
 }
 
-.hovertext {
-  position: relative;
-  
-}
+
 
 .dot-under {
   border-bottom: 1px dotted black;
@@ -223,7 +227,7 @@ a:hover {
   background-color: orange;
 }
 
-.exp {
+.exp, .teaching{
   background-color: blue;
 }
 
@@ -242,7 +246,7 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.edu-item {
+.resume-item {
   margin-bottom: 10px;
 }
 
@@ -259,4 +263,11 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#color-button {
+  border: none;
+  background-color: rgba(0, 0, 0,0);
+  margin: 0;
+  padding: 0;
 }

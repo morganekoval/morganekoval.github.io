@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoKo / Morgane Koval</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
-    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <script src="js/jquery.min.js"></script>
     <link rel="icon" href="images/logo2.png">
 </head>
+
 
 <body>
 
@@ -30,14 +31,15 @@
           <div><a id="about-link" href="#about">about</a></div>
           <div><a id="projects-link" href="#projects">projects</a></div>
           <div><a id="resume-link" href="#resume">resume</a></div>
+          <div><a id="resume-link" href="#misc">misc</a></div>
         </div>
       </div>
     </div>
 
     <div class="col-md-8">
       <h2 id="about">about</h2>
-    <div>I'm a PhD Student in the <a href="https://team.inria.fr/potioc/fr/">Potioc team</a> at Inria, Bordeaux, working under supervision of <a href="http://yvonnejansen.me">Dr. Yvonne Jansen</a> and funded by the <a href="http://ember.inria.fr">Ember</a> project. I study <span class="hovertext dot-under" data-hover="uncertainty visualizations showing predictions of plausible future event outcomes">predictive visualizations</span> for <span class="hovertext dot-under" data-hover="decisions taken by individuals regarding their private life">personal decision making</span>. It means that I'm interested in investigating different ways to assist and guide people towards more informed decisions, via visual support based on their personal data.<br/>
-      <strong>+</strong> I'm into all kinds of maps and big orange circles.</div>
+    <div>I'm a PhD Student in the <a href="https://team.inria.fr/potioc/fr/">Potioc team</a> at Inria, Bordeaux, working under supervision of <a href="http://yvonnejansen.me">Yvonne Jansen</a> and funded by the <a href="http://ember.inria.fr">Ember</a> project. I study <span class="hovertext dot-under" data-hover="uncertainty visualizations showing predictions of plausible future event outcomes">predictive visualizations</span> for <span class="hovertext dot-under" data-hover="decisions taken by individuals regarding their private life">personal decision making</span>. It means that I'm interested in investigating different ways to assist and guide people towards more informed decisions, via visual support based on their personal data.<br/>
+      <strong>+</strong> I'm into all kinds of maps and big <button id="color-button" onclick="changeBackground();">orange</button> circles.</div>
 
       <h2 id="projects">projects</h2>
 
@@ -70,20 +72,32 @@
   <div class="resume-cat">
       <div class="row">
         <div class="col-md-1">
-          <span class="vertical-txt exp">exp.</span>
+          <span class="vertical-txt exp">experience</span>
         </div>
 
         <div class="col-md-11">
-          
+
+        <div class="resume-item">
           <div class="row">
-            <div class="col-md-2"><span class="resume-date">March-August 2020</span></div>
-            <div class="col-md-10"><span class="resume-title">Internship</span> "Situated Personal Time Management", supervised by <a href="http://yvonnejansen.me">Dr. Yvonne Jansen</a>. <br/> <a href="https://www.isir.upmc.fr">ISIR</a>, Sorbonne University, France.
+            <div class="col-md-2"><span class="resume-date">June-August 2023</span></div>
+            <div class="col-md-10"><span class="resume-title">Visiting Student</span> working on animated predictive visualizations, supervised by <a href="http://fannychevalier.net">Fanny Chevalier</a>. <br/> <a href="https://www.dgp.toronto.edu">DGP</a>, University of Toronto, ON, Canada.
             </div>
           </div>
+        </div>
+          
+          <div class="resume-item">
+          <div class="row">
+            <div class="col-md-2"><span class="resume-date">March-August 2020</span></div>
+            <div class="col-md-10"><span class="resume-title">Internship</span> "Situated Personal Time Management", supervised by <a href="http://yvonnejansen.me">Yvonne Jansen</a>. <br/> <a href="https://www.isir.upmc.fr">ISIR</a>, Sorbonne University, France.
+            </div>
+          </div>
+        </div>
 
         </div>
       </div>
     </div>
+
+
     <div class="resume-cat">
 
         <div class="row">
@@ -93,15 +107,15 @@
 
         <div class="col-md-11">
           
-          <div class="edu-item">
+          <div class="resume-item">
           <div class="row">
             <div class="col-md-2"><span class="resume-date">October 2020-</span></div>
-            <div class="col-md-10"><span class="resume-title">PhD Student</span> "Predictive Visualizations for Personal Decision Making", supervised by <a href="http://yvonnejansen.me">Dr. Yvonne Jansen</a>. <br/> <a href="https://www.inria.fr/fr/centre-inria-de-luniversite-de-bordeaux">Inria Bordeaux Sud-Ouest</a>, Talence, France.
+            <div class="col-md-10"><span class="resume-title">PhD Student</span> "Predictive Visualizations for Personal Decision Making", supervised by <a href="http://yvonnejansen.me">Yvonne Jansen</a>. <br/> <a href="https://www.inria.fr/fr/centre-inria-de-luniversite-de-bordeaux">Inria Bordeaux Sud-Ouest</a>, Talence, France.
             </div>
           </div>
         </div>
 
-        <div class="edu-item">
+        <div class="resume-item">
           <div class="row">
             <div class="col-md-2"><span class="resume-date">2018-2020</span></div>
             <div class="col-md-10"><span class="resume-title">MSc in Computer Science</span> Specialty: operations research and AI (robotics & decision support). <br/> <a href="https://sciences.sorbonne-universite.fr/formation-sciences/masters/master-informatique/parcours-androide">Sorbonne University</a>, Paris, France.
@@ -109,7 +123,7 @@
           </div>
         </div>
 
-        <div class="edu-item">
+        <div class="resume-item">
           <div class="row">
             <div class="col-md-2"><span class="resume-date">2015-2018</span></div>
             <div class="col-md-10"><span class="resume-title">BS in Mathematics</span>. <br/>
@@ -123,6 +137,45 @@
       </div>
     </div>
 
+    <div class="resume-cat">
+      <div class="row">
+        <div class="col-md-1">
+          <span class="vertical-txt teaching">teaching</span>
+        </div>
+
+        <div class="col-md-11">
+          
+          <div class="resume-item">
+          <div class="row">
+            <div class="col-md-2"><span class="resume-date">April-June 2023</span></div>
+            <div class="col-md-10"><span class="resume-title">C programming project</span> Students (3rd year) had to code an <a href="https://en.wikipedia.org/wiki/Game_of_the_Amazons">Amazon game</a> with different strategies (head of course: <a href="https://www.labri.fr/perso/renault/working/index.php">David Renault</a>). <br/> <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr">Enseirb-Matmeca</a>, Talence, France.
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-item">
+          <div class="row">
+            <div class="col-md-2"><span class="resume-date">2022-2023</span></div>
+            <div class="col-md-10"><span class="resume-title">Object-oriented programming in Java</span> Students (4th year) had to submit a weekly report of their assigment and then their code at the end of the semester as a final project (head of course: Georges Eyrolles). <br/> <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr">Enseirb-Matmeca</a>, Talence, France.
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-item">
+          <div class="row">
+            <div class="col-md-2"><span class="resume-date">April 2022</span></div>
+            <div class="col-md-10"><span class="resume-title">Workshop for <a href="https://math-interactions.u-bordeaux.fr/Nos-projets-evenements/Moi-Informaticienne-Moi-Mathematicienne"> MIMM</a></span> As part of the "Moi Informaticienne, Moi Mathématicienne" week (yearly event), teenage girls from middle to high school attend different workshops to familiarize themselves with mathematics and computer science in more depth -- Workshop on the <a href="https://en.wikipedia.org/wiki/War_(card_game)">War/Battle card game</a> in Python (heads of project: <a href="https://www.labri.fr/perso/zeitoun/">Marc Zeitoun</a>, <a href="https://www.math.u-bordeaux.fr/~lweynans/">Lisl Weynans</a>, <a href="https://www.math.u-bordeaux.fr/~cmenini/">Chantal Menini</a>, <a href="https://www.math.u-bordeaux.fr/imb/fiche-personnelle?uid=jruch&lang=fr">Jean-Jacques Ruch</a>). <br/> <a href="https://www.u-bordeaux.fr">University of Bordeaux</a>, France.
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+   
+      <h2 id="misc">misc</h2>
+    <div>If you speak French, I can guess your <a href="https://morganekoval.github.io/niniv/">birthday</a>.</div>
 
 
 </div>
@@ -163,6 +216,26 @@
     first = !first;
   }
 
+  function changeBackground() {
+    const colors = ["orange","pink","green"];
+
+    const button = document.getElementById("color-button");
+    const color = button.innerHTML;
+    
+    let new_color = "";
+    do {
+      new_color = colors[Math.floor(Math.random() * colors.length)];
+    } while (new_color ===color);
+
+    button.innerHTML = new_color;
+
+    const rd1 = Math.random() * 20 + 40;
+    const rd2 = Math.random() * 45 + 15;
+    document.body.style.backgroundPosition = `${rd1}% ${rd2}%`
+    document.body.style.backgroundImage = `url(./images/bg_${new_color}.svg)`
+
+  }
+
 
 /**
   let imgme = document.getElementById('photo-me');
@@ -172,7 +245,7 @@
   imgme.onmouseover = () => { img.src = hover; }
   imgme.onmouseout = () => { img.src = start; }**/
 
-console.log(window.innerHeight);
+// console.log(window.innerHeight);
 /**
   console.log(window.innerWidth);
   // When the user scrolls the page, execute myFunction 
