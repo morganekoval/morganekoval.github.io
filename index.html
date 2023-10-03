@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="" id="style-module">
     <script src="js/jquery.min.js"></script>
     <link rel="icon" href="images/logo2.png">
 </head>
@@ -41,7 +42,7 @@
     <div class="col-md-8">
       <h2 id="about">about</h2>
     <div>I'm a PhD Student in the <a href="https://team.inria.fr/potioc/fr/">Potioc team</a> at Inria, Bordeaux, working under supervision of <a href="http://yvonnejansen.me">Yvonne Jansen</a> and funded by the <a href="http://ember.inria.fr">Ember</a> project. I study <span class="regular-text"><span class="hovertext dot-under" data-hover="uncertainty visualizations showing predictions of plausible future outcomes">predictive visualizations</span></span> for <span class="regular-text"><span class="hovertext dot-under" data-hover="decisions taken by individuals regarding their private life">personal decision making</span></span>. It means that I'm interested in investigating different ways to assist and guide people towards more informed decisions, via visual support most often based on their personal data.<br/>
-      <strong>+</strong> I'm into all kinds of maps and big <button id="color-button" onclick="changeBackground();">orange</button> circles.</div>
+      <strong>+</strong> I'm into all kinds of maps and big <button id="color-button" onclick="changeBackground();"></button> circles.</div>
 
       <h2 id="projects">projects</h2>
 
@@ -317,10 +318,15 @@
 
     const rd1 = Math.random() * 20 + 40;
     const rd2 = Math.random() * 45 + 15;
-    document.body.style.backgroundPosition = `${rd1}% ${rd2}%`
-    document.body.style.backgroundImage = `url(./images/bg_${new_color}.svg)`
+    document.body.style.backgroundPosition = `${rd1}% ${rd2}%`;
+    document.getElementById("style-module").href = `./styles/module-${new_color}.css`;
+
+    // document.body.style.backgroundImage = `url(./images/bg_${new_color}.svg)`;
 
   }
+
+
+  changeBackground();
 
 
 /**

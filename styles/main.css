@@ -8,7 +8,7 @@ body  {
   font-family: OpenSans;
   /*font-weight: normal;*/
   /*background-image: url(../images/bg.png);*/
-  background-image: url(../images/bg_orange.svg);
+  /*background-image: url(../images/bg_orange.svg);*/
   background-repeat: no-repeat;
   background-position: 15% 15%;
   background-size: 2628px 4103px;
@@ -41,7 +41,7 @@ h1 {
 
 h1 span:hover {  
   /*font-weight: bold;*/
-  color: orange;
+  /*color: orange;*/
   background-color: white;
 }
 
@@ -54,10 +54,6 @@ h1 span:hover {
   /*border-bottom: orange 4px solid;*/
 }
 
-.selected {
-  color: orange;
-  text-decoration: underline;
-}
 
 /* Navbar links */
 #navbar a {
@@ -229,7 +225,7 @@ a:hover {
 }
 
 .bibs:hover{
-  color: orange;
+  /*color: orange;*/
   background-color: white;
   text-decoration: none;
 }
@@ -245,9 +241,9 @@ a:hover {
   color: white;
 }
 
-.evencat{
+/*.evencat{
   background-color: orange;
-}
+}*/
 
 .oddcat{
   background-color: blue;
