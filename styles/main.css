@@ -12,6 +12,7 @@ body  {
   background-repeat: no-repeat;
   background-position: 15% 15%;
   background-size: 2628px 4103px;
+  padding-bottom: 100px;
 }
 
 /*col-md-4 {
@@ -41,6 +42,7 @@ h1 {
 h1 span:hover {  
   /*font-weight: bold;*/
   color: orange;
+  background-color: white;
 }
 
 
@@ -133,18 +135,25 @@ a:hover {
   margin-left: 6px;
 }
 
+.paper-pubs {
+  border-left: none;
+}
+
 .project-desc {
 /*  color: white;
   background-color: orange;*/
 }
 
 
+.regular-text{
+  position: relative;
+}
 
 .dot-under {
   border-bottom: 1px dotted black;
 }
 
-.hovertext:before {
+.hovertext::after {
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
@@ -159,14 +168,18 @@ a:hover {
   border-radius: 0px;
   padding: 3px 5px;
   transition: opacity 0s ease-in-out;
-
   position: absolute;
   z-index: 1;
   right: 0;
-  top: 110%;
+  top: 100%;
+  left: 0%;
 }
 
-.hovertext:hover:before {
+.hovertext.emailtext::after {
+  left: 80%;
+}
+
+.hovertext:hover:after {
   opacity: 1;
   visibility: visible;
 }
@@ -186,7 +199,7 @@ a:hover {
   z-index: 1;
 }
 
-#photo-me2 {
+.realpics {
   z-index: 2;
   position: absolute;
   width:  120px;
@@ -197,13 +210,22 @@ a:hover {
   left: 0;
 }
 
-#projects, #resume{
+#projects, #resume, #pubs{
   margin-bottom: 20px;
 }
 
 .bibs {
   color: black;
   text-decoration: 1px black underline;
+}
+
+.bibs-pubs {
+  /*font-size: 12px;*/
+  margin-left: 0px;
+  margin-top: 0;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  font-family: Courier;
 }
 
 .bibs:hover{
@@ -223,11 +245,11 @@ a:hover {
   color: white;
 }
 
-.edu {
+.evencat{
   background-color: orange;
 }
 
-.exp, .teaching{
+.oddcat{
   background-color: blue;
 }
 
@@ -242,11 +264,11 @@ a:hover {
   padding-left: 0px 10px;
 }
 
-.resume-cat {
+.resume-cat, .pubs-cat {
   margin-bottom: 20px;
 }
 
-.resume-item {
+.resume-item, .pubs-item {
   margin-bottom: 10px;
 }
 
